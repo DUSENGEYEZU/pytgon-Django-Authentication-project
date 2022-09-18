@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+{% if user.is_authenticated %}
+	
+   
+	<p>Username: {{ user.username}}</p>
+	<p>Email: {{ user.email }}</p>
+{% endif %}
+    
+<h1>Welcome to Smart RICA</h1>
+<br>
+
+  
+
+{% endblock %}
